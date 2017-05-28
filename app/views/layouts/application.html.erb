@@ -5,14 +5,13 @@
 	<link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
 	<script src="https://use.fontawesome.com/277f01dd74.js"></script>
     <%= csrf_meta_tags %>
-
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
   	<header id="main_navigation" class="clearfix">
-		<a href="index.html" class="name">LIV KAO</a>
+  		<%= link_to "Liv Kao", root_path, class: "name" %>
 		<nav>
 			<%= link_to "Articles", posts_path %>
 			<a href="articles.html">Blog</a>
@@ -20,6 +19,16 @@
 			<a href="contact.html">Contact</a>
 		</nav>
 	</header>
+
     <%= yield %>
+
+    <footer id="main_footer">
+		<p class="copyright">&copy;2017 Liv Kao</p>
+		<nav>
+			<a href="https://twitter.com/olimuchacha" target="_blank"><i class="fa fa-twitter"></i></a>
+			<a href="https://www.instagram.com/liv_kao/" target="_blank"><i class="fa fa-instagram"></i></a>
+			<a href="https://github.com/livkao" target="_blank"><i class="fa fa-github"></i></a>
+		</nav>
+	</footer>
   </body>
 </html>

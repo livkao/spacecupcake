@@ -1,0 +1,29 @@
+
+	<div class="wrapper wrapper_padding clearfix">
+		<div class="col-1 about homepage_content">
+			<h2>About</h2>
+			<hr>
+			<p>I'm a UX designer and freelancing developer currently based in Taipei, Taiwan.</p>
+			<p>By day I work on user experience design and architecture for robotics project at <a href="#">ASUS</a>, by night I spend my time working on rails applications and UIUX deisgn for web/app.</p>
+			<p>You can catch up with me on Twitter, find my behind-the-scene on Instagram and check my messy code on Github.</p>
+		</div>
+		<div class="col-2 homepage_content">
+			<h2>Stuff I've Written</h2>
+			<hr>
+
+			<% @posts.each do |post| %>
+				<h3><a href="#"><%= link_to post.title, post %></a></h3>
+				<p class="date"><%= post.created_at.strftime("%A, %b, %d") %></p>
+			<% end %>
+		</div>
+		<div class="col-3 homepage_content">
+			<h2>Stuff I've Built</h2>
+			<hr>
+			<h3><a href="#">Wonton Foodie</a></h3>
+			<p class="date">Friday May 26th</p>
+			<h3><a href="#">Anna Accessory</a></h3>
+			<p class="date">Friday May 26th</p>
+			<h3><a href="#">ASUS | UX Designerd</a></h3>
+			<p class="date">Friday May 26th</p>
+		</div>
+	</div>
