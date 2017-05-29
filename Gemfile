@@ -7,7 +7,6 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
-
 gem 'rails', '~> 5.1.1'
 gem 'puma', '~> 3.7'
 gem 'sass-rails', '~> 5.0'
@@ -17,7 +16,7 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 gem 'pygments.rb', '~> 0.6.3'
 gem 'redcarpet', '~> 3.3', '>= 3.3.4'
-gem 'friendly_id', '~> 5.1'
+gem 'friendly_id', '~> 5.1.0'
 
 
 group :development, :test do
