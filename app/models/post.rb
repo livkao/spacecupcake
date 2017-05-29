@@ -1,4 +1,4 @@
-class Post < ApplicationRecord::Migration
+class Post < ActiveRecord::Base
 	extend FriendlyId
-	friendly_id :title, use: :slugged
+  friendly_id :title, use: :slugged
 end
